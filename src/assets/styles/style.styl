@@ -1,3 +1,10 @@
+// Responsive block mixins
+mobile() {
+  @media (max-width: 768px) {
+    {block}
+  }
+}
+
 ﻿body {
   background-color: #582D41;
   border-top: 4px solid #01FFFF;
@@ -17,6 +24,11 @@
   align-items: center;
   position: relative;
   font-family: 'Bahiana', cursive;
+
+  +mobile() {
+    flex-direction: column;
+  }
+
 }
 
 .header__logo {
@@ -42,6 +54,11 @@
   margin-left: 46px;
   padding: 16px;
   font-size: 32px;
+
+  +mobile() {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 .header__date,
@@ -178,6 +195,10 @@
   display: flex;
   justify-content: center;
   margin-top: 16px;
+
+  +mobile() {
+    flex-direction: column;
+  }
 }
 
 .empresas__logo {
@@ -198,11 +219,19 @@
   display: flex;
   justify-content: space-around;
   margin-top: 16px;
+
+  +mobile() {
+    flex-direction: column;
+  }
 }
 
 .social__perfil {
   margin: 0
   box-sizing: border-box;
+
+  +mobile() {
+    margin-bottom: 25px;
+  }
 }
 
 .social__picture {

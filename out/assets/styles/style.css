@@ -16,6 +16,11 @@ body {
   position: relative;
   font-family: 'Bahiana', cursive;
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+}
 .header__logo {
   box-sizing: border-box;
   position: relative;
@@ -37,6 +42,12 @@ body {
   margin-left: 46px;
   padding: 16px;
   font-size: 32px;
+}
+@media (max-width: 768px) {
+  .header__infos {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 .header__date,
 .header__local {
@@ -148,6 +159,11 @@ body {
   justify-content: center;
   margin-top: 16px;
 }
+@media (max-width: 768px) {
+  .card__empresas {
+    flex-direction: column;
+  }
+}
 .empresas__logo {
   display: inline-block;
   width: 180px;
@@ -164,9 +180,19 @@ body {
   justify-content: space-around;
   margin-top: 16px;
 }
+@media (max-width: 768px) {
+  .card__social {
+    flex-direction: column;
+  }
+}
 .social__perfil {
   margin: 0;
   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .social__perfil {
+    margin-bottom: 25px;
+  }
 }
 .social__picture {
   border-radius: 50%;
