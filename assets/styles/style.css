@@ -47,10 +47,10 @@ body {
   letter-spacing: 6px;
 }
 .header__local {
-  font-size: 40px;
+  font-size: 32px;
 }
 .header__street {
-  font-size: 30px;
+  font-size: 22px;
 }
 .highlight {
   color: #ff9a56;
@@ -146,15 +146,19 @@ body {
 .card__empresas {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 16px;
 }
-.empresas__logo {
+.garoa__logo,
+.valle__logo {
   display: inline-block;
-  width: 117px;
-  height: 120px;
 }
-.empresas__logo:nth-child(1) {
+.garoa__logo {
   margin-right: 32px;
+  width: 117px;
+}
+.valle__logo {
+  width: 149px;
 }
 .card__duvidas {
   margin: 0;
