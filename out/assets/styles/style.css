@@ -19,6 +19,7 @@ body {
 .header__logo {
   box-sizing: border-box;
   position: relative;
+  width: 100%;
 }
 .header__location {
   position: absolute;
@@ -258,5 +259,24 @@ body {
   }
   to {
     transform: rotate(-135deg) scale(1.2);
+  }
+}
+
+@media (max-width: 600px){
+  #img {
+    width: 300px;
+  }
+
+  .header {
+    display: inline-block;
+    margin: auto 0;
+  }
+
+  .header__logo {
+    align-items: center;
+  }
+
+  .header__infos {
+    margin: auto 0;
   }
 }
