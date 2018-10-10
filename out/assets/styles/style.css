@@ -19,6 +19,9 @@ body {
 .header__logo {
   box-sizing: border-box;
   position: relative;
+}
+
+.header__logo > img {
   width: 100%;
 }
 .header__location {
@@ -283,6 +286,10 @@ body {
   .header__infos {
     margin-left: 10px; 
     margin-top: 30px; 
+  }
+
+  .header__date, .header__local {
+    font-size: 25px;
   }
 
   .card {
