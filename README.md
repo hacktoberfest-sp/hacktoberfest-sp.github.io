@@ -29,6 +29,8 @@ $ npm install
 $ gulp server
 ```
 
+> Obs.: Todas as alterações devem ser feitas dentro da pasta ```src```
+
 ## Tarefas automatizadas
 
 - `$ gulp build`: Compila todos os arquivos.

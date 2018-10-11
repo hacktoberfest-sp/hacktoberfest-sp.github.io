@@ -111,9 +111,10 @@ body {
 .card__title--odd {
   color: #01ffff;
 }
-.card--content {
+.card__content {
   margin: 0;
   margin-top: 16px;
+  line-height: 20px;
 }
 .card__link--even {
   text-decoration: none;
