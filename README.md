@@ -41,8 +41,8 @@ $ gulp server
 
 Veja no [guia](https://github.com/hacktoberfest-sp/hacktoberfest-sp.github.io/issues) os próximos passos do projeto ;)
 <br>
-Quer contrinuir? [Siga essas recomendações](https://github.com/hacktoberfest-sp/hacktoberfest-sp.github.io/blob/master/CONTRIBUTING.md).
+Quer contrinuir? [Siga essas recomendações](https://github.com/hacktoberfest-sp/hacktoberfest-sp.github.io/blob/development/CONTRIBUTING.md).
 
 ## Licença
 
-[Licença MIT](https://github.com/hacktoberfest-sp/hacktoberfest-sp.github.io/blob/master/LICENSE.md) © [Larissa Abreu](http://larissaabreu.github.io/)
+[Licença MIT](https://github.com/hacktoberfest-sp/hacktoberfest-sp.github.io/blob/development/LICENSE.md) © [Larissa Abreu](http://larissaabreu.github.io/)
