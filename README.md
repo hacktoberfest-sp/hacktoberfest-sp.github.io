@@ -1,4 +1,4 @@
-﻿# Hacktoberfest São Paulo 2018
+﻿# Hacktoberfest São Paulo 2019
 
 > Feito para ajudar pessoas a contribuirem com open source
 
