@@ -1,7 +1,9 @@
 body {
-  background-color: #582d41;
-  border-top: 4px solid #01ffff;
+  background-color: #1c224a;
+  border-top: 4px solid #5babed;
   color: #fff;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
 }
 .header {
   box-sizing: border-box;
@@ -14,21 +16,19 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  font-family: 'Bahiana', cursive;
+}
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+  }
 }
 .header__logo {
   box-sizing: border-box;
   position: relative;
 }
-.header__location {
-  position: absolute;
-  left: 170px;
-  top: 208px;
-  display: block;
-  color: #ff9a56;
-  font-size: 42px;
-  letter-spacing: 1px;
-  transform: rotate(-7deg);
+.header__logo img {
+  max-width: 400px;
+  width: 100%;
 }
 .header__infos {
   display: block;
@@ -36,7 +36,14 @@ body {
   color: #fff;
   margin-left: 46px;
   padding: 16px;
-  font-size: 32px;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  .header__infos {
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+  }
 }
 .header__date,
 .header__local {
@@ -44,34 +51,46 @@ body {
   box-sizing: border-box;
 }
 .header__date {
-  letter-spacing: 6px;
-}
-.header__local {
-  font-size: 32px;
-}
-.header__street {
+  text-transform: uppercase;
+  font-weight: bold;
   font-size: 22px;
 }
+.header__local {
+  margin-top: 5px;
+  font-size: 20px;
+}
+.header__street {
+  font-size: 18px;
+}
 .highlight {
-  color: #ff9a56;
+  color: #c71ea3;
 }
 .header__inscreva,
 .btn__inscreva {
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 5px;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  padding: 10px 20px;
+  line-height: 1;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .header__inscreva {
-  background-color: #fff;
-  color: #582d41;
+  background-color: #5babed;
+  color: #fff;
   width: 235px;
   margin: 24px 0;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 800px) {
+  .header__inscreva {
+    width: unset;
+    max-width: 100%;
+    display: block;
+  }
 }
 .header__inscreva:hover {
-  background-color: #01ffff;
+  background-color: #c71ea3;
 }
 .main {
   box-sizing: border-box;
@@ -79,7 +98,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .card {
   box-sizing: border-box;
@@ -89,46 +108,36 @@ body {
   margin-bottom: 40px;
 }
 .card:first-child {
-  margin-top: 32px;
+  margin-top: 20px;
 }
 .card:last-child {
   margin-bottom: 0;
 }
-.card--even {
+.card--even,
+.card--odd {
   box-sizing: border-box;
-  background-color: #47182f;
+  background-color: #1d2c4e;
   border-radius: 4px;
 }
 .card__title {
-  font-size: 38px;
+  font-size: 2em;
   letter-spacing: 2px;
   margin: 0;
-  font-family: 'Bahiana', cursive;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-.card__title--even {
-  color: #ff9a56;
-}
+.card__title--even,
 .card__title--odd {
-  color: #01ffff;
+  color: #5babed;
 }
 .card__content {
   margin: 0;
   margin-top: 16px;
   line-height: 20px;
 }
-.card__link--even {
-  text-decoration: none;
-  color: #01ffff;
-}
-.card__link--even:hover {
-  color: #ff9a56;
-}
+.card__link--even,
 .card__link--odd {
   text-decoration: none;
-  color: #ff9a56;
-}
-.card__link--odd:hover {
-  color: #01ffff;
+  color: #fff922;
 }
 .card__inscreva {
   text-align: right;
@@ -150,6 +159,17 @@ body {
   align-items: center;
   margin-top: 16px;
 }
+.card__empresas img {
+  max-width: 200px;
+}
+@media screen and (max-width: 800px) {
+  .card__empresas {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
 .garoa__logo,
 .valle__logo {
   display: inline-block;
@@ -157,6 +177,11 @@ body {
 .garoa__logo {
   margin-right: 32px;
   width: 117px;
+}
+@media screen and (max-width: 800px) {
+  .garoa__logo {
+    margin: 0 0 10px 0;
+  }
 }
 .valle__logo {
   width: 149px;
@@ -169,24 +194,37 @@ body {
   justify-content: space-around;
   margin-top: 16px;
 }
-.social__perfil {
-  margin: 0;
-  box-sizing: border-box;
-}
-.social__picture {
-  border-radius: 50%;
-  width: 132px;
-  height: 132px;
-}
-.social__username {
+.card__social a {
   text-decoration: none;
-  color: #01ffff;
+  color: #fff922;
+  display: block;
+  margin: 10px 30px;
 }
-.social__username:hover {
-  color: #ff9a56;
+@media screen and (max-width: 1000px) {
+  .card__social {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+.social__perfil {
+  margin: 10px 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 .card__realizacao {
+  display: flex;
+  justify-content: center;
   margin-top: 16px;
+}
+.card__realizacao .realizacao__logo {
+  max-width: 200px;
+}
+@media screen and (max-width: 800px) {
+  .card__realizacao {
+    flex-direction: column;
+  }
 }
 .footer {
   box-sizing: border-box;
@@ -197,12 +235,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 50px;
-  background-color: #01ffff;
-  color: #582d41;
+  background-color: #5babed;
+  color: #c71ea3;
 }
 .footer__heart {
   animation: pulse 0.5s infinite alternate ease-in;
-  background-color: #582d41;
+  background-color: #c71ea3;
   display: inline-block;
   height: 10px;
   margin: 0 15px;
@@ -210,7 +248,7 @@ body {
   width: 10px;
 }
 .footer__heart:before {
-  background-color: #582d41;
+  background-color: #c71ea3;
   border-radius: 50%;
   content: "";
   height: 10px;
@@ -220,7 +258,7 @@ body {
   width: 10px;
 }
 .footer__heart:after {
-  background-color: #582d41;
+  background-color: #c71ea3;
   border-radius: 50%;
   content: "";
   height: 10px;

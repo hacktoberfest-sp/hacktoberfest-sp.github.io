@@ -1,12 +1,13 @@
 ﻿body {
-  background-color: #582D41;
-  border-top: 4px solid #01FFFF;
+  background-color: #1c224a;
+  border-top: 4px solid #5babed;
   color: #fff;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
 }
 
 .header {
   box-sizing: border-box;
-  // border: 2px dashed yellow;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
@@ -16,23 +17,19 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  font-family: 'Bahiana', cursive;
+
+  @media screen and (max-width 800px) {
+    flex-direction column;
+  }
 }
 
 .header__logo {
   box-sizing: border-box;
   position: relative;
-}
-
-.header__location {
-  position: absolute;
-  left: 170px;
-  top: 208px;
-  display: block;
-  color: #ff9a56;
-  font-size: 42px;
-  letter-spacing: 1px;
-  transform: rotate(-7deg);
+  img { 
+    max-width: 400px;
+    width 100%
+  }
 }
 
 .header__infos {
@@ -41,7 +38,13 @@
   color: #fff;
   margin-left: 46px;
   padding: 16px;
-  font-size: 32px;
+  font-size: 20px;
+
+  @media screen and (max-width 800px) {
+    text-align center;
+    margin 0;
+    overflow hidden
+  }
 }
 
 .header__date,
@@ -51,40 +54,51 @@
 }
 
 .header__date {
-  letter-spacing: 6px;
-}
-
-.header__local {
-  font-size: 32px;
-}
-
-.header__street {
+  text-transform uppercase;
+  font-weight: bold;
   font-size: 22px;
 }
 
+.header__local {
+  margin-top 5px;
+  font-size: 20px;
+}
+
+.header__street {
+  font-size: 18px;
+}
+
 .highlight {
-  color: #FF9A56;
+  color: #c71ea3;
 }
 
 .header__inscreva,
 .btn__inscreva {
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 5px;
-  display: inline-block;
-  text-align: center;
+  display flex;
+  padding 10px 20px;
+  line-height: 1;
+  justify-content center;
+  align-items center;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header__inscreva {
-  background-color: #fff;
-  color: #582D41;
+  background-color: #5babed;
+  color: #fff;
   width: 235px;
   margin: 24px 0;
+  letter-spacing: 2px;
+
+  @media screen and (max-width 800px) {
+    width unset;
+    max-width 100%;
+    display block
+  }
 }
 
 .header__inscreva:hover {
-  background-color: #01FFFF;
+  background-color: #c71ea3;
 }
 
 .main {
@@ -94,7 +108,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .card {
@@ -106,32 +120,30 @@
 }
 
 .card:first-child {
-  margin-top: 32px;
+  margin-top: 20px;
 }
 
 .card:last-child {
   margin-bottom: 0;
 }
 
-.card--even {
+.card--even ,
+.card--odd {
   box-sizing: border-box;
-  background-color: #47182f;
+  background-color: #1D2C4E;
   border-radius: 4px;
 }
 
 .card__title {
-  font-size: 38px;
+  font-size: 2em;
   letter-spacing: 2px;
   margin: 0;
-  font-family: 'Bahiana', cursive;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.card__title--even {
-  color: #FF9A56;
-}
-
+.card__title--even,
 .card__title--odd {
-  color: #01FFFF;
+  color: #5babed;
 }
 
 .card__content {
@@ -140,22 +152,10 @@
   line-height: 20px;
 }
 
-.card__link--even {
-  text-decoration: none;
-  color: #01FFFF;
-}
-
-.card__link--even:hover {
-  color: #FF9A56;
-}
-
+.card__link--even,
 .card__link--odd {
   text-decoration: none;
-  color: #FF9A56;
-}
-
-.card__link--odd:hover {
-  color: #01FFFF;
+  color: #fff922;
 }
 
 .card__inscreva {
@@ -180,6 +180,17 @@
   justify-content: center;
   align-items: center;
   margin-top: 16px;
+
+  img {
+    max-width 200px
+  }
+
+  @media screen and (max-width 800px) {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction column;
+  }
 }
 
 .garoa__logo,
@@ -190,6 +201,10 @@
 .garoa__logo {
   margin-right: 32px;
   width: 117px;
+
+  @media screen and (max-width 800px) {
+    margin: 0 0 10px 0;
+  }
 }
 
 .valle__logo {
@@ -204,35 +219,45 @@
   display: flex;
   justify-content: space-around;
   margin-top: 16px;
+
+  a {
+    text-decoration none
+    color: #fff922
+    display block
+    margin 10px 30px
+  }
+
+  @media screen and (max-width 1000px) {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction column;
+  }
 }
 
 .social__perfil {
-  margin: 0
+  margin: 10px 0;
   box-sizing: border-box;
-}
 
-.social__picture {
-  border-radius: 50%;
-  width: 132px;
-  height: 132px;
-}
-
-.social__username {
-  text-decoration: none;
-  color: #01FFFF;
-}
-
-.social__username:hover {
-  color: #FF9A56;
+  text-decoration none
 }
 
 .card__realizacao {
+  display flex
+  justify-content: center
   margin-top: 16px;
+
+  .realizacao__logo {
+    max-width 200px
+  }
+
+  @media screen and (max-width 800px) {
+    flex-direction column;
+  }
 }
 
 .footer {
   box-sizing: border-box;
-  // border: 2px dashed blue;
   width: 100%;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
@@ -240,13 +265,13 @@
   align-items: center;
   justify-content: center;
   height: 50px;
-  background-color: #01FFFF;
-  color: #582D41;
+  background-color: #5babed;
+  color: #c71ea3;
 }
 
 .footer__heart {
   animation: pulse .5s infinite alternate ease-in;
-  background-color: #582D41;
+  background-color: #c71ea3;
   display: inline-block;
   height: 10px;
   margin: 0 15px;
@@ -255,7 +280,7 @@
 }
 
 .footer__heart:before {
-	background-color: #582D41;
+	background-color: #c71ea3;
   border-radius: 50%;
   content: "";
   height: 10px;
@@ -266,7 +291,7 @@
 }
 
 .footer__heart:after {
-	background-color: #582D41;
+	background-color: #c71ea3;
   border-radius: 50%;
   content: "";
   height: 10px;
