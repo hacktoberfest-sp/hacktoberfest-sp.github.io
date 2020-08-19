@@ -75,5 +75,7 @@ export const HeaderInfos = styled.div`
 
   @media (max-width: 700px) {
     margin-top: 15px;
+    width: 100%;
+    text-align: center;
   };
 `;
