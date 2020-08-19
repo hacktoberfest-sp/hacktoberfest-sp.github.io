@@ -54,7 +54,7 @@ const IndexPage = () => (
 
     <S.Card>
       <h1>Dúvidas?</h1>
-      <p>Em caso de alguma dúdiva entre em contato com:</p>
+      <p>Em caso de alguma dúvida entre em contato com:</p>
       <S.Profiles>
         <a href="https://twitter.com/naluhh" target="_blank">
           <S.Profile>

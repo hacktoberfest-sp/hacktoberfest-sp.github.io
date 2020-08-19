@@ -23,17 +23,6 @@ module.exports = {
       },
     },
     {
-      resolve: `google-fonts-plugin`,
-      options: {
-        fonts: [
-          {
-            family: `Inter`,
-            variants: [`400`, `500`, `700`, `900`],
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         start_url: `/`,

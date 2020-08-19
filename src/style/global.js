@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
   html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    font-family: 'Inter', cursive;
+    font-family: 'Inter', sans-serif;
   }
 
   body {
