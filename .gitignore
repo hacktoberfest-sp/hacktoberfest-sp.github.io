@@ -9,4 +9,6 @@ node_modules/
 npm-debug.log
 .publish/
 
-package-lock.json
+#gatsby files
+.cache/
+public
