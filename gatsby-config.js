@@ -23,7 +23,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `google-fonts-plugin`,
       options: {
         fonts: [
           {
