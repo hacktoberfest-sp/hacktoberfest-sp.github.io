@@ -37,12 +37,16 @@ export const Card = styled.section`
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
+    };
+  };
 
   & svg {
     max-width: 100%;
-  }
+  };
+
+  & iframe {
+    margin-top: 16px;
+  };
 `;
 
 export const CardBg = styled(Card)`
@@ -67,6 +71,10 @@ export const BtnCard = styled.a`
 
   &:hover {
     background-color: var(--bg-btn-hover);
+  };
+
+  @media (max-width: 700px) {
+    align-self: initial;
   };
 `;
 

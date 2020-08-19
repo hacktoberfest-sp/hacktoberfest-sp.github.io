@@ -47,12 +47,17 @@ const IndexPage = () => (
     </S.Card>
 
     <S.CardBg>
-      <h1>Como participar?</h1>
-      <p>Esse ano temos que utilizar a plataforma que a equipe do Hacktoberfest disponibilizou. Iremos enviar à todas as pessoas que <a href="https://www.meetup.com/pt-BR/hacktoberfest-sp/events/272260565/" target="_blank">confirmarem presença no meetup</a> um link para poder confirmar presença nessa nova plataforma também!</p>
-      <p>Ainda estamos avaliando as opções de plataformas para poder realizar nosso encontro virtualmente e assim que definirmos iremos atualizar a todes vocês!</p>
+      <h1>Confira como foi a edição do ano passado:</h1>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/gggE5ownw84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </S.CardBg>
 
     <S.Card>
+      <h1>Como participar?</h1>
+      <p>Esse ano temos que utilizar a plataforma que a equipe do Hacktoberfest disponibilizou. Iremos enviar à todas as pessoas que <a href="https://www.meetup.com/pt-BR/hacktoberfest-sp/events/272260565/" target="_blank">confirmarem presença no meetup</a> um link para poder confirmar presença nessa nova plataforma também!</p>
+      <p>Ainda estamos avaliando as opções de plataformas para poder realizar nosso encontro virtualmente e assim que definirmos iremos atualizar a todes vocês!</p>
+    </S.Card>
+
+    <S.CardBg>
       <h1>Dúvidas?</h1>
       <p>Em caso de alguma dúvida entre em contato com:</p>
       <S.Profiles>
@@ -77,13 +82,13 @@ const IndexPage = () => (
           </S.Profile>
         </a>
       </S.Profiles>
-    </S.Card>
+    </S.CardBg>
 
-    <S.CardBg>
+    <S.Card>
       <h1>Realização</h1>
       <p>Esse ano o Hacktoberfest está sendo realizado graças ao apoio das empresas abaixo:</p>
       <Sponsors />
-    </S.CardBg>
+    </S.Card>
   </Layout>
 );
 
