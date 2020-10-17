@@ -18,7 +18,6 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const HeaderLogo = styled.div`
-  max-width: 50%;
 
   & svg {
     max-width: 100%;
@@ -31,51 +30,5 @@ export const HeaderLogo = styled.div`
     & svg {
       max-height: 200px;
     };
-  };
-`;
-
-export const HeaderInfos = styled.div`
-  box-sizing: border-box;
-  font-size: 32px;
-
-  & p {
-    margin: 15px 0;
-  };
-
-  & p.date {
-    margin: 0;
-  };
-
-  & span {
-    color: var(--highlight-principal);
-  };
-
-  & span.street {
-    color: var(--text-color);
-    font-size: 22px;
-  };
-
-  & a {
-    display: inline-block;
-    box-sizing: border-box;
-    background-color: var(--bg-btn);
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    width: 235px;
-    padding: 5px;
-    margin: 0;
-    color: var(--white);
-    font-weight: 500;
-
-    :hover {
-      background-color: var(--bg-btn-hover);
-    };
-  };
-
-  @media (max-width: 700px) {
-    margin-top: 15px;
-    width: 100%;
-    text-align: center;
   };
 `;

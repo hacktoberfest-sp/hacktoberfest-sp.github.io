@@ -20,6 +20,7 @@ export const Card = styled.section`
 
   & p {
     font-size: 1.2em;
+    line-height: 1.5;
     margin: 10px 0;
   };
 
@@ -31,6 +32,11 @@ export const Card = styled.section`
     color: var(--highlight-principal);
     text-decoration: none;
   };
+
+  & ul {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
 
   li {
     margin-bottom: 15px;
@@ -49,9 +55,25 @@ export const Card = styled.section`
   };
 `;
 
+export const CardBgWrapper = styled.div`
+  background: linear-gradient(to right, var(--highlight-principal), purple);
+  border-radius: 5px;
+  margin: 40px 0;
+  padding: 1px;
+  position: relative;
+
+  @media (max-width: 700px) {
+    margin: 15px 0;
+  };
+`;
+
 export const CardBg = styled(Card)`
   background-color: var(--bg-light);
   border-radius: 5px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 `;
 
 export const BtnCard = styled.a`
