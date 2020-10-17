@@ -2,9 +2,12 @@
   "name": "hacktoberfest-sp",
   "private": false,
   "description": "> Hacktoberfest São Paulo",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "author": "Larissa Abreu",
+  "contributors": [
+    "Ricardo Gouveia <ricardogouveia3_@hotmail.com> (https://rcrd.me)"
+  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
